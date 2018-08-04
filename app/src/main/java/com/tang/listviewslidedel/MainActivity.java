@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListView mListView;
+    private SlideDelListView mListView;
     private ArrayAdapter<String> mAdapter;
     private List<String> mDatas;
 

@@ -64,7 +64,7 @@ public class SlideDelListView extends ListView {
                 curView = getChildAt(curPos - getFirstVisiblePosition());
                 break;
             case MotionEvent.ACTION_MOVE:
-                float dx = x - xDown;
+                float dx = xDown - x;
                 float dy = y - yDown;
                 //判断是否满足条件显示popupWindow
                 if (dx > touchSlop && Math.abs(dy) < touchSlop) {
